@@ -308,10 +308,8 @@ var fillCard = function(card, data) {
         if (data.avatarUrl) {
             card.find(".issue-assignee").css("background-image", "url('" + data.avatarUrl + "')");
         } else {
-            var initials = data.assignee.trim().replace(/\s{2,}/g," ").split(/\s/).map(function (namePart) {
-                return namePart[0].toUpperCase();
-            }).join('');
-            card.find(".issue-assignee").text(initials);
+            var initials = data.assignee.trim().replace(/\s{2,}/g," ").split(/\s/);
+            card.find(".issue-assignee").text(initials[0]);
             card.find(".issue-assignee").css("background-color", textColor(initials));
         }
     } else {
