@@ -1,7 +1,6 @@
 .idea
 *.iml
 node_modules
-dist
 gh-pages
 .deploy
 .DS_Store
