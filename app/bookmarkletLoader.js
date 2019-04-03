@@ -1,7 +1,7 @@
 (function(){
         var head = document.getElementsByTagName('head')[0];
         var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/bookmarklet.js';
+        scriptElement.src = 'http://47.75.244.75/printer/dist/bookmarklet.js';
         head.appendChild(scriptElement);
         head.removeChild(scriptElement);
 })();

@@ -227,25 +227,25 @@ var getIconStyle = function(type) {
     switch (type.toLowerCase()) {
         case 'default':
             style.color = 'DARKTURQUOISE';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Objects.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Objects.png';
             style.size = '63%';
             break;
         case 'story':
         case 'user story':
             style.color = 'GOLD';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Bulb.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Bulb.png';
             style.size = '63%';
             break;
         case 'bug':
         case 'problem':
         case 'correction':
             style.color = 'CRIMSON';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Bug.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Bug.png';
             style.size = '63%';
             break;
         case 'epic':
             style.color = 'ROYALBLUE';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Flash.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Flash.png';
             style.size = '63%';
             break;
         case 'task':
@@ -255,28 +255,28 @@ var getIconStyle = function(type) {
         case 'unteraufgabe':
         case 'technische aufgabe':
             style.color = 'WHEAT';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Task.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Task.png';
             style.size = '63%';
             break;
         case 'new feature':
             style.color = 'LIMEGREEN';
-            style.image = "https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Plus.png";
+            style.image = "http://47.75.244.75/printer/dist/resources/icons/Plus.png";
             style.size = '63%';
             break;
         case 'improvement':
         case 'verbesserung':
             style.color = 'CORNFLOWERBLUE';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Arrow.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/Arrow.png';
             style.size = '63%';
             break;
         case 'research':
             style.color = 'MEDIUMTURQUOISE';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/ErlenmeyerFlask.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/ErlenmeyerFlask.png';
             style.size = '63%';
             break;
         case 'test':
             style.color = 'ORANGE';
-            style.image = 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/CrashDummy.png';
+            style.image = 'http://47.75.244.75/printer/dist/resources/icons/CrashDummy.png';
             style.size = '63%';
             break;
     }
@@ -418,7 +418,7 @@ var renderCards = function(issueKeyList) {
 
     $("head", printFrameDocument).append($('<style>').html(fs.readFileSync(__dirname + '/card.css', 'utf8')));
     // preload some resources
-    $("head", printFrameDocument).append($('<link rel="subresource"/>').attr('href', 'https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/Tearing.png'));
+    $("head", printFrameDocument).append($('<link rel="subresource"/>').attr('href', 'http://47.75.244.75/printer/dist/resources/Tearing.png'));
 
     console.log("load " + issueKeyList.length + " issues...");
 
@@ -453,12 +453,12 @@ var printPreviewJs = function() {
     var documentBody = $("body", global.appFrame.document);
 
     documentBody.find("#report-issue").click(function (event) {
-        window.open('https://github.com/qoomon/Jira-Issue-Card-Printer/issues');
+        window.open('https://github.com/smallg/Jira-Issue-Card-Printer/issues');
         return false;
     });
 
     documentBody.find("#about").click(function (event) {
-        window.open('https://github.com/qoomon/Jira-Issue-Card-Printer');
+        window.open('https://github.com/smallg/Jira-Issue-Card-Printer');
         return false;
     });
 

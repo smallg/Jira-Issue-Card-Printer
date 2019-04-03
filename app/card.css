@@ -42,7 +42,7 @@ body {
     width: 100%;
     border-style: solid;
     border-bottom-width: 0.5rem;
-    border-image: url(https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/Tearing.png);
+    border-image: url(http://47.75.244.75/printer/dist/resources/Tearing.png);
     border-image-width: 0 0 0.7rem 0;
     border-image-slice: 56 0 56 1;
     border-image-repeat: round round;
@@ -163,7 +163,7 @@ body {
   width: 3.0rem;
   border-radius: 50%;
   background-color: DEEPSKYBLUE;
-  background-image: url(https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/CloudLoading.png);
+  background-image: url(http://47.75.244.75/printer/dist/resources/icons/CloudLoading.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 63%;
@@ -200,7 +200,7 @@ body {
   height: 2.0rem;
   border-radius: 50%;
   background-color: LIGHTSKYBLUE;
-  background-image: url(https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/Attachment.png);
+  background-image: url(http://47.75.244.75/printer/dist/resources/icons/Attachment.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -273,7 +273,7 @@ body {
   height: 2.5rem;
   border-radius: 50%;
   background-color: ORCHID;
-  background-image: url(https://github.com/smallg/Jira-Issue-Card-Printer/dist/resources/icons/AlarmClock.png);
+  background-image: url(http://47.75.244.75/printer/dist/resources/icons/AlarmClock.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 65%;
