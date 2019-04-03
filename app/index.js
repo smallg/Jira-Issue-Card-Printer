@@ -310,7 +310,7 @@ var fillCard = function(card, data) {
         } else {
             var initials = data.assignee.trim().replace(/\s{2,}/g," ").split(/\s/);
             card.find(".issue-assignee").text(initials[0]);
-            card.find(".issue-assignee").css("background-color", textColor(initials));
+            card.find(".issue-assignee").css("background-color", textColor(initials[0]));
         }
     } else {
         card.find(".issue-assignee").remove();
